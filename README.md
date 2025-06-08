@@ -1,30 +1,64 @@
-# 🚀 AI Lead Generation Toolkit  
-*Built for Caprae Capital's AI Internship Challenge*
+# 🔗 AI Lead Generation Toolkit  
+*A submission for Caprae Capital's AI Internship Challenge*
 
 ---
 
-## 🧠 Overview
+## 🚀 Overview
 
-This project is a **Quantity-Driven Lead Enrichment Suite** designed to replicate and extend the core functionalities of [SaasquatchLeads](https://www.saasquatchleads.com/) within ⏱️ 5 hours.
-
-🎯 Objective: Build lightweight tools that streamline the **lead generation** process using AI & APIs — with practical business utility and automation focus.
+This project is a **lightweight, modular tool suite** built in under 5 hours to support AI-enhanced **lead generation** and **email enrichment** workflows. The tools are designed for speed, business impact, and scalability. 👨‍💻📈
 
 ---
 
-## 🧰 Toolkit Features
+## 🧰 Features Breakdown
 
-### 1️⃣ **Company → Domain Converter**
-🔍 Converts company names into official domains using Clearbit  
-✨ Adds logo, LinkedIn, Twitter, and Facebook links  
-📊 Includes confidence scoring via `rapidfuzz`
+---
 
+### 2️⃣ **Domain → Email Pattern Guesser**
+📬 Predicts professional email addresses using `First Name + Last Name + Domain`  
+🔄 Supports **bulk CSV input**  
+📁 Outputs a downloadable CSV of email guesses  
+
+📄 **File**: `EmailGuesser.py`
+
+---
+
+### 3️⃣ **LinkedIn → Email Guesser**
+🕵️ Extracts **names and company** from a LinkedIn URL  
+📡 Uses **Clearbit** to find domains  
+✅ Validates each guessed email using **Hunter.io**  
+💾 Works with **single URLs** and **bulk CSV uploads**
+
+📄 **File**: `LinkedinEmailGuesser.py`
+
+---
+
+### 4️⃣ **CSV Enrichment & Export**
+📁 Uploads a raw CSV with basic lead info  
+⚙️ Enriches data with **company domain** and **guessed emails**  
+📮 Validates email guesses using Hunter API  
+📥 Download enriched & validated dataset as a CSV
+
+📄 **File**: `CSVEnrichment.py`
+
+---
+
+## 🛠️ Technologies Used
+
+- **Language**: Python 🐍  
+- **Framework**: Streamlit for rapid UI development  
+- **APIs**:
+  - 🔍 Clearbit — domain + company enrichment
+  - 📬 Hunter.io — email validation  
+- **Libraries**:
+  - `requests` for API calls  
+  - `pandas` for data processing  
+  - `beautifulsoup4` for scraping LinkedIn  
+  - `rapidfuzz` for fuzzy matching company names  
+
+---
+
+## 🚀 How to Run Locally
+
+### 📦 Install Dependencies:
 ```bash
-File: DomainConverter.py
-2️⃣ Domain → Email Pattern Guesser
-📬 Predicts professional email addresses using name + domain
-🔄 Supports bulk CSV input and downloadable results
-
-bash
-Copy
-Edit
-File: EmailGuesser.py
+pip install streamlit pandas requests beautifulsoup4 rapidfuzz
