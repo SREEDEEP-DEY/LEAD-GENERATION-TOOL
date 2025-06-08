@@ -17,7 +17,9 @@ This project is a **lightweight, modular tool suite** built in under 5 hours to 
 ✨ Adds logo, LinkedIn, Twitter, and Facebook links  
 📊 Includes confidence scoring via `rapidfuzz`
 
-```bash
+📄 **File**: `DomainConverter.py`
+
+---
 
 ### 2️⃣ **Domain → Email Pattern Guesser**
 📬 Predicts professional email addresses using `First Name + Last Name + Domain`  
