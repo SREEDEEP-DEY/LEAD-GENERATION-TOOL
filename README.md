@@ -12,6 +12,12 @@ This project is a **lightweight, modular tool suite** built in under 5 hours to 
 ## 🧰 Features Breakdown
 
 ---
+### 1️⃣ **Company → Domain Converter**
+🔍 Converts company names into official domains using Clearbit  
+✨ Adds logo, LinkedIn, Twitter, and Facebook links  
+📊 Includes confidence scoring via `rapidfuzz`
+
+```bash
 
 ### 2️⃣ **Domain → Email Pattern Guesser**
 📬 Predicts professional email addresses using `First Name + Last Name + Domain`  
