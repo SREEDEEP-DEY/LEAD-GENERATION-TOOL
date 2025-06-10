@@ -42,7 +42,7 @@ This project is a **lightweight, modular tool suite** built in under 5 hours to 
 
 ### 4️ **CSV Enrichment & Export**
  Uploads a raw CSV with basic lead info  
-⚙ Enriches data with **company domain** and **guessed emails**  
+ Enriches data with **company domain** and **guessed emails**  
  Validates email guesses using Hunter API  
  Download enriched & validated dataset as a CSV
 
